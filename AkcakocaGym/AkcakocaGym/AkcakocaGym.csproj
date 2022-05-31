@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{665B5BAF-683D-4D57-B95A-82A7F8D9B894}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AkcakocaGym</RootNamespace>
+    <AssemblyName>AkcakocaGym</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnasayfa.Designer.cs">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitmenBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitmenBilgileri.Designer.cs">
+      <DependentUpon>frmEgitmenBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitmenDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitmenDuzenle.Designer.cs">
+      <DependentUpon>frmEgitmenDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEgitmenEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEgitmenEkle.Designer.cs">
+      <DependentUpon>frmEgitmenEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciGirisi.Designer.cs">
+      <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOlcu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOlcu.Designer.cs">
+      <DependentUpon>frmOlcu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOlcuDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOlcuDuzenle.Designer.cs">
+      <DependentUpon>frmOlcuDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOlcuEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOlcuEkle.Designer.cs">
+      <DependentUpon>frmOlcuEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunSatis.Designer.cs">
+      <DependentUpon>frmUrunSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeBilgileri.Designer.cs">
+      <DependentUpon>frmUyeBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeDuzenle.Designer.cs">
+      <DependentUpon>frmUyeDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeEkle.Designer.cs">
+      <DependentUpon>frmUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Abonelik.cs" />
+    <Compile Include="Models\GymContext.cs" />
+    <Compile Include="Models\Kullanici.cs" />
+    <Compile Include="Models\Musteri.cs" />
+    <Compile Include="Models\Olcum.cs" />
+    <Compile Include="Models\Paket.cs" />
+    <Compile Include="Models\Satis.cs" />
+    <Compile Include="Models\Urun.cs" />
+    <Compile Include="Models\Yetki.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnasayfa.resx">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitmenBilgileri.resx">
+      <DependentUpon>frmEgitmenBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitmenDuzenle.resx">
+      <DependentUpon>frmEgitmenDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEgitmenEkle.resx">
+      <DependentUpon>frmEgitmenEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciGirisi.resx">
+      <DependentUpon>frmKullaniciGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOlcu.resx">
+      <DependentUpon>frmOlcu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOlcuDuzenle.resx">
+      <DependentUpon>frmOlcuDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOlcuEkle.resx">
+      <DependentUpon>frmOlcuEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunSatis.resx">
+      <DependentUpon>frmUrunSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeBilgileri.resx">
+      <DependentUpon>frmUyeBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeDuzenle.resx">
+      <DependentUpon>frmUyeDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeEkle.resx">
+      <DependentUpon>frmUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
